@@ -11,7 +11,7 @@ const jump = () => {
 const loop = setInterval(()=> {
     const nessPosition = +window.getComputedStyle(ness).bottom.replace('px', '');
     const pipePosition = pipe.offsetLeft;
-    if(pipePosition <= 100){
+    if(pipePosition <= 100 && pipePosition > 0 && nessPosition <80 ){
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;
 

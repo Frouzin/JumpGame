@@ -17,13 +17,13 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 2s infinite linear;
+    animation: pipe-animation 1.5s infinite linear;
 }
 
 .ness{
     width: 150px;
     position: absolute;
-    bottom: 80px;
+    bottom: 0;
 }
 
 .jump{
