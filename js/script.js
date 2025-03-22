@@ -29,8 +29,14 @@ const loop = setInterval(()=> {
     }
 },10);
 
-document.addEventListener('keydown', (event) => {
-    if (event.code === 'Space' || event.code === 'ArrowUp') {
-        jump();
-    }
+document.addEventListener('keydown', jump);
+
+// Faz pular ao tocar na tela (mobile)
+document.addEventListener('touchstart', () => {
+    jump();
+});
+
+// E também no clique (opcional, funciona em PC e mobile)
+document.addEventListener('click', () => {
+    jump();
 });
