@@ -29,4 +29,8 @@ const loop = setInterval(()=> {
     }
 },10);
 
-document.addEventListener('keydown', jump);
+document.addEventListener('keydown', (event) => {
+    if (event.code === 'Space' || event.code === 'ArrowUp') {
+        jump();
+    }
+});
